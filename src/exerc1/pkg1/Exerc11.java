@@ -15,16 +15,22 @@ public class Exerc11 {
         
                         
             
-            nota1=Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a nota 1: ")); 
-            nota2=Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a nota 2: ")); 
-            nota3=Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a nota 3: ")); 
+            nota1=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 1: ")); 
+            nota2=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 2: ")); 
+            nota3=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 3: ")); 
             
             media =  (nota1+nota2+nota3)/3;
             
+            if(media>= 60){
+                JOptionPane.showMessageDialog(null,"A Media é :"+media+" :-)");
+                  }else {JOptionPane.showMessageDialog(null,"A Media é :"+media+" :-(");
+            }
+            }
             
-        }
-            
-        }
+    }
+    
+
+
         
         
         
