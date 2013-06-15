@@ -47,6 +47,7 @@ class Potencia {
                     numDefault = numDefault * num;
                      
                 }JOptionPane.showMessageDialog(null,"o numero "+num+" elevado à "+pot+" é igual a: "+numDefault);
+                
                                 break;
                default : JOptionPane.showMessageDialog(null,"Exercicio não encontrado não encontrado");
         
