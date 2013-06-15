@@ -4,27 +4,39 @@
  */
 package exerc1.pkg1;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 
 public class Exerc11 {
 
     public static void main(String[] args) {
        
-        float nota1, nota2, nota3, media;
         
-                        
-            
-            nota1=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 1: ")); 
-            nota2=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 2: ")); 
-            nota3=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a nota 3: ")); 
-            
-            media =  (nota1+nota2+nota3)/3;
-            
-            if(media>= 60){
-                JOptionPane.showMessageDialog(null,"A Media é :"+media+" :-)");
-                  }else {JOptionPane.showMessageDialog(null,"A Media é :"+media+" :-(");
-            }
+       
+       
+        
+        int op;
+        op = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o exercicio que deseja executar \n 1- Notas \n 2- Números por extenso \n 3- Cem vezes \n 3- Potências"));
+        switch(op){
+            case 1:
+                JOptionPane.showMessageDialog(null,"Notas");
+                Notas1.main(args);
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null,"Numero por extenso");
+                Extenso1.main(args);
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null,"Cem vezes");
+                Cem1.main(args);
+                break;
+            case 4:
+                JOptionPane.showMessageDialog(null,"Numero por extenso");
+                Potencia.main(args);
+                break;
+            default : JOptionPane.showMessageDialog(null,"Exercicio não encontrado não encontrado");
+                
+        }
             }
             
     }
