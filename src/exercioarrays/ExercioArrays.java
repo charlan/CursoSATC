@@ -22,7 +22,7 @@ public class ExercioArrays {
        
         
         int op;
-        op = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o exercicio que deseja executar \n 1- Notas \n 2- Números por extenso \n 3- Cem vezes \n 3- Potências"));
+        op = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o exercicio que deseja executar \n 1- Dias da semana \n 2- Maior número \n 3- Entrada de agenda telefonica"));
         switch(op){
             case 1:
                 JOptionPane.showMessageDialog(null,"Exercicio 2.1");
